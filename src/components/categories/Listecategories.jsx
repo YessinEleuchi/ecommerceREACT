@@ -8,7 +8,7 @@ const Listecategories = () => {
 
   const fetchCategories = async () => {
     try {
-      const res = await axios.get('https://khalil-iit-nud5.vercel.app/api/api/categories');
+      const res = await axios.get('https://yessin-iit.vercel.app/api/api/Categorie');
       setCategories(res.data);
     } catch (error) {
       console.error('Error fetching categories:', error);
@@ -19,7 +19,7 @@ const Listecategories = () => {
 
   const deleteCartigorie = async (id) => {
     try {
-      await axios.delete(`https://khalil-iit-nud5.vercel.app/api/api/categories/${id}`);
+      await axios.delete(`https://yessin-iit.vercel.app/api/api/Categorie/${id}`);
       setCategories(categories.filter((cat) => cat.id !== id));
     } catch (error) {
       console.error('Error deleting category:', error);

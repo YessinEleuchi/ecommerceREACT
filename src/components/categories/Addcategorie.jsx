@@ -1,5 +1,5 @@
 import axios from 'axios'; // Importation d'axios pour effectuer des requêtes HTTP
-import React, { useState } from 'react'; // Importation des hooks React
+import  { useState } from 'react'; // Importation des hooks React
 
 const Addcategorie = () => {
   // États pour stocker les données du formulaire
@@ -20,7 +20,7 @@ const Addcategorie = () => {
       };
 
       // Appel à l'API pour ajouter une nouvelle catégorie
-      await axios.post('https://khalil-iit-nud5.vercel.app/api/api/categories', category);
+      await axios.post('https://yessin-iit.vercel.app/api/api/Categorie', category);
       setMessage('Catégorie ajoutée avec succès !'); // Message de succès
       setNomcategorie(''); // Réinitialisation du formulaire
       setImagecategorie('');
